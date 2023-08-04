@@ -16,21 +16,30 @@
                 <p class="prefix">
                     YOUR SCORE:  
                 </p>
-                
-
+                <h1 class="HUD-text" id ="score">
+                0
+                </h1>
+            </div>
+            <div class="HUD-item">
+                <p class="prefix">
+                    Time Left
+                </p>
+                <h2 class="HUD-text" id="timer">
+                    60 seconds
+                </h2>
             </div>
         </div>
         <h2 id="question">Question goes here</h2>
     </div>
     <div class="answer-buttons">
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
+        <button class="btn" data-number="1">Answer 1</button>
+        <button class="btn"data-number="2">Answer 2</button>
+        <button class="btn"data-number="3">Answer 3</button>
+        <button class="btn"data-number="4">Answer 4</button>
     </div>
     <button id="next-btn">Next</button>
  </div>
 
-
+<script src="assets/main.js"></script>
 </body>
 </html>
