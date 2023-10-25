@@ -17,7 +17,7 @@ body{
     padding: 30px;
 } */
 h1{
-    font-size: 50px;
+    font-size: 40px;
     color: #1880c5;
     font-weight: 600;
     border-bottom: 1px solid #3333;
@@ -28,7 +28,7 @@ h1{
         padding: 20px 0;
 } */
 h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: #1880c5;
     font-weight: 600;
     margin-bottom:20px ;
@@ -63,7 +63,7 @@ h2 {
 .hide{
     display: none;
 }
- .btn{
+ .answers{
     background: white;
     color: #1880c5;
     font-weight: 500;
@@ -76,13 +76,45 @@ h2 {
     cursor: pointer;
 
 }
-.btn:hover{
+.answers:hover{
     background: darkblue;
     color: white;
 } 
 
-.btn[disabled]:hover {
+.answers[disabled]:hover {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
 } 
+
+.prefix{
+    text-align: center;
+    font-size: 30px;
+}
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+.correct {
+    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
+}
+.incorrect{
+    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1));
+}
+
+.centerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* You can adjust the height as needed */
+  }
+.highscoreDiv{
+   
+    width: 1000px;
+    height: 500px;
+
+    background: white;
+}
+#scoreList{
+    list-style-position: inside;
+}
