@@ -76,7 +76,7 @@ incrementScore = num => {
 getNewQuestion =() => {
     if(availableQuestions.length === 0 || questionCounter > Max_questions ) {
         localStorage.setItem('mostRecentScore', score)
-        return window.location.assign('end.html')
+        return window.location.assign('Coding-quiz/end.html')
     }
     // question counter increases by 1
     questionCounter++
@@ -150,7 +150,7 @@ function updateTimer () {
     } 
     if(timerValue === 0){
         localStorage.setItem('mostRecentScore', score)
-        return window.location.assign('end.html')
+        return window.location.assign('Coding-quiz/end.html')
    
     }
     
