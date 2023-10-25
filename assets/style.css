@@ -6,6 +6,7 @@
 }
 body{
     background-color: aqua;
+    text-align: center;
 }
 /* .app{
     background: #ffff;
@@ -15,35 +16,105 @@ body{
     border-radius: 10px;
     padding: 30px;
 } */
- h1{
-    font-size: 25px;
+h1{
+    font-size: 40px;
     color: #1880c5;
     font-weight: 600;
     border-bottom: 1px solid #3333;
-    padding-bottom: 30px;
-    margin-bottom:30px ;
+     padding-bottom: 30px; 
+    margin-bottom: 50px ; 
 }
-/* .quiz{
-    padding: 20px 0;
+    /* .quiz{
+        padding: 20px 0;
 } */
-.quiz h2{
-    font-size: 20px;
+h2 {
+    font-size: 30px;
     color: #1880c5;
     font-weight: 600;
+    margin-bottom:20px ;
 }
-.btn{
+.container{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    
+    margin: 0 auto;
+    padding-top: 30%;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+
+}
+.justify-center{
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+ .answers{
     background: white;
     color: #1880c5;
     font-weight: 500;
-    width: 100%;
+    width: 60%;
     border: 1px solid #2222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
     border-radius: 4px;
     cursor: pointer;
+
 }
-.btn:hover{
+.answers:hover{
     background: darkblue;
     color: white;
+} 
+
+.answers[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+} 
+
+.prefix{
+    text-align: center;
+    font-size: 30px;
+}
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+.correct {
+    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
+}
+.incorrect{
+    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1));
+}
+
+.centerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* You can adjust the height as needed */
+  }
+.highscoreDiv{
+   
+    width: 1000px;
+    height: 500px;
+
+    background: white;
+}
+#scoreList{
+    list-style-position: inside;
 }
